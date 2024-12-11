@@ -35,5 +35,5 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fmt.Printf("This is the body %s and this is the statuscode: %d ", body, response.StatusCode)
+	fmt.Printf("This is the body %s\n and this is the statuscode: %d\n", string(body), response.StatusCode)
 }
