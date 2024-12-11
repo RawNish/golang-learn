@@ -7,5 +7,13 @@ import (
 
 func main(){
  args:= os.Args
- fmt.Println("Arguemnts for thisrun are %v\n" , args)
+ 
+ if(len(args)<2){
+	fmt.Println("NOt enough arguments\nExiting now")
+	os.Exit(1)
+
+ }
+ //fmt.Println("Arguemnts for thisrun are \n" , args[1],args[2])
+ fmt.Println("Arguemnts for thisrun are \n" , args[1:])
+
 }
